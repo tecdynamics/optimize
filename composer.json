@@ -1,0 +1,23 @@
+{
+    "name": "tecdynamics/optimize",
+    "description": "Optimize page speed package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Tec\\Optimize\\": "src"
+        }
+    },
+    "require": {
+        "tecdynamics/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tec\\Optimize\\Providers\\OptimizeServiceProvider"
+            ],
+            "aliases": {
+                "OptimizerHelper": "Tec\\Optimize\\Facades\\OptimizerHelper"
+            }
+        }
+    }
+}
